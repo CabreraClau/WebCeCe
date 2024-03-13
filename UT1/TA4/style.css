@@ -1,0 +1,39 @@
+
+h2 ~ p:hover {
+    font-style: italic;
+}
+h2 + p:hover {
+    color: red;
+}
+
+div > p + p {
+    font-style: italic;
+}
+
+p.clase:hover {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+.boton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+.boton:active {
+    background-color: red;
+  }
+
+.campo::placeholder {
+color: #999;
+}
+  
+  
+.campo[type="email"]::placeholder {
+font-style: italic;
+}
