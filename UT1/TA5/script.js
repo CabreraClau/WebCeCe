@@ -1,15 +1,21 @@
+
+let contadorTareasTarjeta1 = 0;
+let contadorTareasTarjeta2 = 0;
+let contadorTareasTarjeta3 = 0;
+
 let addListButton = document.getElementById("addListButton");
 
 addListButton.addEventListener("click", function() {
   
-
+  contadorTareasTarjeta1++;
   let newList = document.createElement("div");
   newList.className = "Tarea";
   let modalId = "myModal" + Math.floor(Math.random() * 1000); // Generar un ID único para el modal
 
   let ListContent = `
+  <p>Tarea ${contadorTareasTarjeta1}:</p>
   <label for="Tarea">Tarea:</label>
-  <textarea id="tarea" name="tarea" rows="1" cols="10"></textarea>
+  <textarea id="tarea${contadorTareasTarjeta1}" name="tarea${contadorTareasTarjeta1}" rows="1" cols="10"></textarea>
           <div id="myModal" class="modal">
             <div class="modal-content">
               <span class="close">&times;</span>
@@ -46,21 +52,32 @@ addListButton.addEventListener("click", function() {
   let tarjetaDiv = document.querySelector(".tarea");
   tarjetaDiv.appendChild(newList);
   
+  
 
 });
+/*
+let deleteTaskButton = newList.target.classList.contains("eliminarTareaButton");
+  deleteTaskButton.addEventListener("click", function() {
+    // Decrementa el contador de tareas cuando se elimina una tarea
+    contadorTareas--;
 
+    // Elimina la tarea del DOM
+    newList.remove();
+  });*/
 
 let addListButton2 = document.getElementById("addListButton2");
 
 addListButton2.addEventListener("click", function() {
+  contadorTareasTarjeta2++;
 
   let newList = document.createElement("div");
   newList.className = "Tarea2";
   let modalId = "myModal" + Math.floor(Math.random() * 1000); // Generar un ID único para el modal
 
   let ListContent = `
+  <p>Tarea ${contadorTareasTarjeta2}:</p>
   <label for="Tarea">Tarea:</label>
-  <textarea id="tarea" name="tarea" rows="1" cols="10"></textarea>
+  <textarea id="tarea${contadorTareasTarjeta2}" name="tarea${contadorTareasTarjeta2}" rows="1" cols="10"></textarea>
           <div id="myModal" class="modal">
             <div class="modal-content">
               <span class="close">&times;</span>
@@ -155,13 +172,14 @@ document.getElementById("botonEditar").addEventListener("click", function() {
   }
 });
 
-
+/*
 document.addEventListener("click", function(event) {
   if (event.target.classList.contains("eliminarTareaButton")) {
     event.target.parentElement.remove();
+    newList.remove();
   }
 });
-
+*/
 
 
 document.addEventListener("click", function(event) {
@@ -172,11 +190,7 @@ document.addEventListener("click", function(event) {
   }
 });
 
-document.addEventListener("click", function(event) {
-  if (event.target.classList.contains("eliminarTareaButton")) {
-    event.target.parentElement.remove();
-  }
-});
+
 
 document.addEventListener("click", function(event) {
   if (event.target.classList.contains("botonEditar")) {
@@ -213,12 +227,19 @@ document.querySelector('.principal').addEventListener('click', function(event) {
   }
 });
 
+
+
+
 async function enviarTareaAlServidor(tarea) {
+  console.log("enviando tarea")
   try {
     const response = await fetch('http://localhost:3000/api/tasks', {
       method: 'POST',
+      mode: "cors", // no-cors, *cors, same-origin
+      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: "same-origin", // include, *same-origin, omit
       headers: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(tarea)
     });
@@ -238,8 +259,6 @@ async function enviarTareaAlServidor(tarea) {
 
 
 // Llamar a la función para crear una nueva tarea cuando sea necesario, por ejemplo, en respuesta a un evento de clic en un botón
-
-
 
 
 
