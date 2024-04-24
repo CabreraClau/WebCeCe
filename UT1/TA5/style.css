@@ -1,0 +1,267 @@
+.imagen1 {
+  width: 1rem;
+  height: 1rem;
+  padding: 1rem;
+  margin-right: 0.3rem;
+}
+.imagen1:hover {
+  width: 1rem;
+  height: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: #999;
+  margin-right: 0.3rem;
+}
+.texto {
+  color: black;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.texto:hover {
+  cursor: pointer;
+  background-color: #999;
+}
+.conteiner {
+  width: 100vw;
+  background-color: rgba(128, 128, 128, 0.711);
+  height: 3rem;
+  display: flex;
+  justify-content: start;
+  border: 2px solid white;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://embed-ssl.wistia.com/deliveries/d5ae8190f0aa7dfbe0b01f336f29d44094b967b5.webp?image_crop_resized=1280x720");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.Texto2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filtros {
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.303);
+  height: 4rem;
+}
+
+.tarjeta {
+  width: 9rem;
+  height: fit-content;
+  margin-top: 2rem;
+  background-color: rgb(104, 58, 58);
+  border-radius: 10%;
+  gap: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+
+}
+.button {
+  margin: 1rem;
+  padding: 1rem;
+  width: 7rem;
+  font-size: 0.6rem;
+  background-color: #430303;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #600404;
+}
+
+.arribaTarjeta {
+  display: flex;
+  justify-content: space-around;
+}
+
+.textoTarjeta {
+  color: rgb(245, 245, 245);
+}
+.imagenTarjetaOpciones {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 1rem;
+  height: 1rem;
+}
+.imagenTarjetaOpciones:hover {
+  background-color: #600404;
+}
+
+.tarea {
+  margin-left: 1rem;
+  height: fit-content;
+}
+
+.tarea textarea {
+  resize: vertical; 
+  min-height: 1rem; 
+  width: 6rem; 
+  padding: 5px; 
+}
+
+.tarea2 {
+  margin-left: 1rem;
+  height: fit-content;
+}
+.tarea2 textarea {
+  resize: vertical; 
+  min-height: 1rem; 
+  width: 6rem; 
+  padding: 5px; 
+}
+
+.tarea3 {
+  margin-left: 1rem;
+  height: fit-content;
+}
+.tarea3 textarea {
+  resize: vertical; 
+  min-height: 1rem; 
+  width: 6rem; 
+  padding: 5px; 
+}
+
+label {
+  display: block;
+  font: 1rem "Fira Sans", sans-serif;
+}
+
+input,
+label {
+  margin: 0.4rem 0;
+}
+
+.botonTarjetaOpciones1{
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+
+}
+.botonTarjetaOpciones2{
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+
+}
+.botonTarjetaOpciones3{
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 601px) {
+  .principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .contenedor {
+    justify-content: space-around;
+    flex-direction: row;
+    display: flex;
+    
+  }
+  .tarjeta {
+    width: 15rem;
+    height: fit-content;
+    background-color: rgb(104, 58, 58);
+    border-radius: 10%;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    text-align: left;
+  }
+  .tarea {
+    margin-left: 1rem;
+    height: fit-content;
+  }
+  
+  .tarea textarea {
+    resize: vertical; 
+    min-height: 1rem; 
+    width: 10rem; 
+    padding: 5px; 
+  }
+  
+  .tarea2 {
+    margin-left: 1rem;
+    height: fit-content;
+  }
+  .tarea2 textarea {
+    resize: vertical; 
+    min-height: 1rem; 
+    width: 10rem; 
+    padding: 5px; 
+  }
+  
+  .tarea3 {
+    margin-left: 1rem;
+    height: fit-content;
+  }
+  .tarea3 textarea {
+    resize: vertical; 
+    min-height: 1rem; 
+    width: 10rem; 
+    padding: 5px; 
+  }
+  
+}

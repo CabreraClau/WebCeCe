@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trello</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <img class="background"></img>
+  <div class="conteiner">
+    <img class="imagen1"
+      src="https://media.discordapp.net/attachments/1204978994148016168/1219426103932751873/32_-_navigation_candy_box_list_menu_options_stack-512.png?ex=660b420f&is=65f8cd0f&hm=706838dce7e8594f99b295a027c3956c64b6f39a46c40d8257dc91c1bcb9f5c8&=&format=webp&quality=lossless&width=548&height=548">
+    <div class="texto">
+      <p>Trello</p>
+    </div>
+  </div>
+  <div class="filtros">
+    <h1 class="Texto2">Equipo</h1>
+  </div>
+  <div class="principal">
+    <div class="contenedor">
+      <div class="tarjeta" id="tarjeta1">
+        <div class="arribaTarjeta">
+          <p id="textoTarjeta" class="textoTarjeta">To do</p>
+          <button  id="botonEditar" class="botonTarjetaOpciones1">
+            <img class="imagenTarjetaOpciones" src="https://cdn.icon-icons.com/icons2/2645/PNG/512/three_dots_icon_159804.png" alt="Opciones">
+          </button>
+        </div>
+        <div class="tarea">
+          <label for="Tarea">Tarea:</label>
+          <textarea id="tarea" name="tarea" rows="1" cols="10"></textarea>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <form id="editarFormulario">
+                <label for="nuevaDescripcion">Descripción:</label>
+                <input type="text" id="nuevaDescripcion" name="nuevaDescripcion">
+                
+                <label for="nuevoAsignado">Asignado a:</label>
+                <input type="text" id="nuevoAsignado" name="nuevoAsignado">
+                
+                <label for="nuevaFechaInicio">Fecha de inicio:</label>
+                <input type="text" id="nuevaFechaInicio" name="nuevaFechaInicio">
+                
+                <label for="nuevaFechaFin">Fecha de fin:</label>
+                <input type="text" id="nuevaFechaFin" name="nuevaFechaFin">
+
+                <label for="estadoTarea">Estado de la tarea:</label>
+                <input type="text" id="estadoTarea" name="estadoTarea">
+
+                <label for="prioridad">prioridad:</label>
+                <input type="text" id="prioridad" name="prioridad">
+                
+                <button type="submit">Guardar cambios</button>
+              </form>
+            </div>
+          </div>
+          <button class="myBtn openModalButton" data-modal-id="myModal">Open Modal</button>
+          
+          
+
+
+
+        </div>
+        
+        
+        <button id="addListButton" class="button">Add another List</button>
+      </div>
+      <div class="tarjeta">
+        <div class="arribaTarjeta">
+          <p class="textoTarjeta">Doing</p>
+          <button class="botonTarjetaOpciones2">
+            <img class="imagenTarjetaOpciones" src="https://cdn.icon-icons.com/icons2/2645/PNG/512/three_dots_icon_159804.png" alt="Opciones">
+          </button>
+        </div>
+        <div class="tarea2">
+          <label for="Tarea2">Tarea:</label>
+          <textarea id="tarea" name="tarea" rows="1" cols="10"></textarea>
+          <div id="myModal2" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <form id="editarFormulario2">
+                <label for="nuevaDescripcion">Descripción:</label>
+                <input type="text" id="nuevaDescripcion" name="nuevaDescripcion">
+                
+                <label for="nuevoAsignado">Asignado a:</label>
+                <input type="text" id="nuevoAsignado" name="nuevoAsignado">
+                
+                <label for="nuevaFechaInicio">Fecha de inicio:</label>
+                <input type="text" id="nuevaFechaInicio" name="nuevaFechaInicio">
+                
+                <label for="nuevaFechaFin">Fecha de fin:</label>
+                <input type="text" id="nuevaFechaFin" name="nuevaFechaFin">
+
+                <label for="estadoTarea">Estado de la tarea:</label>
+                <input type="text" id="estadoTarea" name="estadoTarea">
+
+                <label for="prioridad">prioridad:</label>
+                <input type="text" id="prioridad" name="prioridad">
+                
+                <button type="submit">Guardar cambios</button>
+              </form>
+            </div>
+          
+          </div>
+          <button class="myBtn openModalButton" data-modal-id="myModal2">Open Modal</button>
+          
+          
+        </div>
+        <button id="addListButton2" class="button">Add another List</button>
+      </div>
+      
+  
+      <div class="tarjeta">
+        <div class="arribaTarjeta">
+          <p class="textoTarjeta">Done</p>
+          <button class="botonTarjetaOpciones3">
+            <img class="imagenTarjetaOpciones" src="https://cdn.icon-icons.com/icons2/2645/PNG/512/three_dots_icon_159804.png" alt="Opciones">
+          </button>
+        </div>
+        <div class="tarea3">
+          <label for="Tarea3">Tarea:</label>
+          <textarea id="tarea" name="tarea" rows="1" cols="10"></textarea>
+          <div id="myModal3" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <form id="editarFormulario2">
+                <label for="nuevaDescripcion">Descripción:</label>
+                <input type="text" id="nuevaDescripcion" name="nuevaDescripcion">
+                
+                <label for="nuevoAsignado">Asignado a:</label>
+                <input type="text" id="nuevoAsignado" name="nuevoAsignado">
+                
+                <label for="nuevaFechaInicio">Fecha de inicio:</label>
+                <input type="text" id="nuevaFechaInicio" name="nuevaFechaInicio">
+                
+                <label for="nuevaFechaFin">Fecha de fin:</label>
+                <input type="text" id="nuevaFechaFin" name="nuevaFechaFin">
+
+                <label for="estadoTarea">Estado de la tarea:</label>
+                <input type="text" id="estadoTarea" name="estadoTarea">
+
+                <label for="prioridad">prioridad:</label>
+                <input type="text" id="prioridad" name="prioridad">
+                
+                <button type="submit">Guardar cambios</button>
+              </form>
+              
+            </div>
+            
+          </div>
+          <button class="myBtn openModalButton" data-modal-id="myModal3">Open Modal</button>
+          
+        </div>
+        <button id="addListButton3" class="button">Add another List</button>
+        
+      </div>
+    </div>
+      
+      
+      
+  </div>
+    
+  
+
+  <script src="script.js"> </script>
+</body>
+
+</html>
