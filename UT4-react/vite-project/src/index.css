@@ -1,0 +1,17 @@
+#root {
+  font-family: arial;
+  text-align: center;
+} 
+
+
+.green {
+    background-color: green;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
