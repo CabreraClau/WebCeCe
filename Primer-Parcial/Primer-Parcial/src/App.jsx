@@ -28,7 +28,7 @@
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<TableroDeportes juegos={juegos} refetchJuegos={refetchJuegos} />} />
-        <Route path="/deporte/:id" element={<DeporteDetalle juegos={juegos} />} />
+        <Route path="/deporte" element={<DeporteDetalle juegos={juegos} />} />
       </Routes>
     </BrowserRouter>
     
