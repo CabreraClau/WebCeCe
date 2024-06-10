@@ -1,0 +1,11 @@
+.tarjeta {
+    width: 9rem;
+    height: fit-content;
+    margin-top: 2rem;
+    background-color: rgb(104, 58, 58);
+    border-radius: 10%;
+    gap: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
